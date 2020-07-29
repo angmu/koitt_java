@@ -1,0 +1,122 @@
+import java.util.Scanner;
+
+public class Ex0212_04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		학생의 점수를 입력받는 배열
+//		이름을 입력받는 배열[3] 점수를 입력하는 배열 [3][3]
+		
+		
+		
+//		//이름과 점수를 모두 입력받아 출력+학생들의 국어 영어 수학 합계를 구해서 배열에..
+		
+		String[] name=new String[3];
+		
+		int [][] score=new int[3][4];
+		Scanner scan=new Scanner(System.in);
+		
+		
+		for(int i=0;i<score.length;i++) {
+			
+			//이름입력
+			System.out.println("학생의 이름을 입력하세요");
+			name[i]=scan.next();
+			//점수입력
+			for(int j=0;j<score[i].length-1;j++) {
+				System.out.println("점수를 입력하세요");
+				score[i][j]=scan.nextInt();
+				//합계입력
+				score[i][3]=score[i][3]+score[i][j];
+			}
+			
+		}
+		
+		System.out.print("\t"+"국어\t"+"영어\t"+"수학\t"+"합계\t\n");
+		for(int i=0;i<name.length;i++) {
+			System.out.print(name[i]+"\t");
+			for(int j=0;j<score.length;j++) {
+				System.out.print(score[i][j]+"\t");
+			}System.out.println();
+		}
+		
+//		
+//		//이름과 점수를 모두 입력받아 출력
+//		
+//		String[] name=new String[3];
+//		
+//		int [][] score=new int[3][3];
+//		Scanner scan=new Scanner(System.in);
+//		
+//		
+//		for(int i=0;i<score.length;i++) {
+//			System.out.println("학생의 이름을 입력하세요");
+//			name[i]=scan.next();
+//			for(int j=0;j<score[i].length;j++) {
+//				System.out.println("점수를 입력하세요");
+//				score[i][j]=scan.nextInt();
+//			}
+//		}
+//		
+//		System.out.print("\t"+"국어\t"+"영어\t"+"수학\t\n");
+//		for(int i=0;i<name.length;i++) {
+//			System.out.print(name[i]+"\t");
+//			for(int j=0;j<score.length;j++) {
+//				System.out.print(score[i][j]+"\t");
+//			}System.out.println();
+//		}
+		
+//		//점수를 입력받는 형태
+//		int [][] score=new int[3][3];
+//		
+//		String[] name= {"홍길동","이순신","강감찬"};
+////		int[][] score= {
+////				{100,88,79},{100,99,87},{79,88,85}
+////		};
+//		//출력
+//		Scanner scan=new Scanner(System.in);
+//		for(int i=0;i<score.length;i++) {
+//			System.out.print(name[i]+" 학생의 ");
+//			for(int j=0;j<score[i].length;j++) {
+//				System.out.println("점수를 입력하세요");
+//				score[i][j]=scan.nextInt();
+//			}
+//		}
+//		
+//		System.out.print("\t"+"국어\t"+"영어\t"+"수학\t\n");
+//		for(int i=0;i<score.length;i++) {
+//			System.out.print(score[i]+"\t");
+//			for(int j=0;j<score.length;j++) {
+//				System.out.print(score[i][j]+"\t");
+//			}System.out.println();
+//		}
+//		
+//		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		String[] name= {"홍길동","이순신","강감찬"};
+//		int[][] score= {
+//				{100,88,79},{100,99,87},{79,88,85}
+//		};
+//		//출력
+//		System.out.print("\t"+"국어\t"+"영어\t"+"수학\t\n");
+//		for(int i=0;i<name.length;i++) {
+//			System.out.print(name[i]+"\t");
+//			for(int j=0;j<score.length;j++) {
+//				System.out.print(score[i][j]+"\t");
+//			}System.out.println();
+//		}
+		
+	}//main
+
+}//class
